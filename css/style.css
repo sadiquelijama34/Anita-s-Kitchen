@@ -1,0 +1,39 @@
+.intro{
+    background: url("Anita-s-Kitchen/assets/backgrounds/landing.jpg");
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+.intro .container{
+    padding-top: 5%;
+    }
+.menu-button {
+    position: fixed;
+    z-index: 1000;
+    margin: 9px 30px;
+    padding: 0;
+    width: 3em;
+    height: 2.25em;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    opacity: 1;
+}
+.menu-button:focus{
+    outline: none;
+    background-color: transparent;
+}
+.menu-button::before {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%);
+    content: '';
+}
